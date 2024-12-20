@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row" style="margin-top: 150px">
+        <div class="col-md-12" style="text-align: center; margin-bottom: 20px">
+          <h4>Lets Get Started</h4>
+          <h4>Create your free account today for unlimited access</h4>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div>
+              <label for="username">Username:</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+                formControlName="username"
+              />
+            </div>
+
+            <div>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+                style="width: 198%"
+                formControlName="password"
+              />
+            </div>
+            <br />
+            <button type="submit" style="width: 198%; margin-top: 10px">
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <div class="col-md-4 image-section">
+      <h2 style="text-align: center; margin-top: 150px; color: white">
+        Welcome To Repost
+      </h2>
+      <img src="../../../assets/friend.svg" alt="friends" />
+    </div>
+  </div>
+</div>
